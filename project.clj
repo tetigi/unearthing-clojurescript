@@ -5,9 +5,7 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [binaryage/devtools "0.9.4"]
                  [org.clojure/clojurescript "1.10.238" :scope "provided"]
-                 [org.roman01la/cljss "1.6.2"]
-                 [reagent "0.7.0"]
-                 [re-frame "0.10.5"]]
+                 [reagent "0.7.0"]]
 
   :source-paths ["src/cljs"]
 

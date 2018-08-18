@@ -1,5 +1,4 @@
-(ns unearthing-clojurescript.app
-  (:require [cljss.core :refer-macros [defstyles]]))
+(ns unearthing-clojurescript.app)
 
 ;; -- VIEW --------------------------------------------------------------------
 
