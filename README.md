@@ -43,5 +43,7 @@ accordingly, but this is just personal preference!
 ## Commands
 
 `lein figwheel`       - start the figwheel auto-reloading server
+
 `lein cljsbuild once` - build the whole cljs project
+
 `lein clsbuild auto`  - build the whole cljs and watch for changse
