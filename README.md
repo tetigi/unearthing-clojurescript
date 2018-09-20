@@ -1,7 +1,7 @@
 # Unearthing Clojurescript #
 
 This repo contains the bare minimum required to get started with a Reagent
-project in Clojurescript, as described by TODO: this blog post.
+project in Clojurescript, as described in [this blog post](https://www.toptal.com/clojure/clojurescript-tutorial-react-front-end). Visit https://www.toptal.com/blog and subscribe to our newsletter to read great posts!
 
 ## I Just Want To Get My Hands Dirty ##
 
