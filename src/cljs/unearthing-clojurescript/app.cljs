@@ -1,8 +1,9 @@
-(ns unearthing-clojurescript.app)
+(ns unearthing-clojurescript.app
+  (:require [unearthing-clojurescript.login :as login]))
 
 ;; -- VIEW --------------------------------------------------------------------
 
 (defn component
   []
   [:div
-   "Hello, world!"])
+    [login/component #(println %1 %2)]])
