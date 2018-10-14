@@ -20,5 +20,5 @@
 (reg-fx
   :request-token
   (fn [{:keys [username password]}]
-    (let [token (complicated-io-login-operation username password)]
+    (let [token "abc123"]
       (rf/dispatch [:store-login token]))))

@@ -6,9 +6,10 @@
                  [efisef/ensorcel "0.2.5-1"]
                  [binaryage/devtools "0.9.4"]
                  [org.clojure/clojurescript "1.10.238" :scope "provided"]
+                 [re-frame "0.10.6"]
                  [reagent "0.7.0"]]
 
-  :source-paths ["src/cljs" "src/clj" "src/cljc"]
+  :source-paths ["src/cljs"]
   :main ^:skip-aot example.core
 
   :jvm-opts ["--add-modules" "java.xml.bind"]
@@ -18,7 +19,7 @@
 
   :cljsbuild {:builds
               [{:id "dev"
-                :source-paths ["src/cljs" "src/cljc"]
+                :source-paths ["src/cljs"]
                 :figwheel {:on-jsload "unearthing-clojurescript.core/on-js-reload"
                            :open-urls ["http://localhost:3449/index.html"]}
 
@@ -33,5 +34,5 @@
   :profiles {:dev {:dependencies [[binaryage/devtools "0.9.9"]
                                   [figwheel-sidecar "0.5.16"]
                                   [cider/piggieback "0.3.1"]]
-                   :source-paths ["dev" "src/cljc" "src/clj"]
+                   :source-paths ["dev"]
                    :clean-targets ^{:protect false} ["resources/public/js/compiled"]}})

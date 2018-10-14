@@ -1,5 +1,6 @@
 (ns unearthing-clojurescript.login
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require [reagent.core :as reagent :refer [atom]]
+            [re-frame.core :as rf]))
 
 ;; -- STATE --
 
@@ -9,7 +10,7 @@
 ;; -- VIEW --
 
 (defn component
-  [on-login]
+  []
   [:div
    [:b "Username"]
    [:input {:type "text"
@@ -21,4 +22,5 @@
             :on-change #(reset! password (-> % .-target .-value))}]
    [:input {:type "button"
             :value "Login!"
-            :on-click #(on-login @username @password)}]])
+            :on-click #(rf/dispatch [:login {:username @username
+                                             :password @password}])}]])
