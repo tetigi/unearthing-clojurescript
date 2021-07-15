@@ -46,4 +46,4 @@ accordingly, but this is just personal preference!
 
 `lein cljsbuild once` - build the whole cljs project
 
-`lein clsbuild auto`  - build the whole cljs and watch for changse
+`lein cljsbuild auto` - build the whole cljs and watch for changes
